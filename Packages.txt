@@ -1,0 +1,9 @@
+//      Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
+//      Microsoft.AspNetCore.Identity.EntityFrameworkCore
+//      Microsoft.AspNetCore.Identity.UI
+//      Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+//      Microsoft.EntityFrameworkCore.SqlServer
+//      Microsoft.EntityFrameworkCore.Tools
+//      Microsoft.VisualStudio.Web.CodeGeneration.Design
+//      X.PagedList 
+//      X.PagedList.Mvc.Core
