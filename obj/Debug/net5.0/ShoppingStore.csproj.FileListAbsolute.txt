@@ -404,7 +404,6 @@ F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-
 F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.GeneratedMSBuildEditorConfig.editorconfig
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.AssemblyInfoInputs.cache
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.AssemblyInfo.cs
@@ -420,8 +419,6 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.TagHelpers.input.cach
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.TagHelpers.output.cache
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.RazorCoreGenerate.cache
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -436,3 +433,8 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.dll
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ref\ShoppingStore.dll
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.pdb
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.genruntimeconfig.cache
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Index.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Privacy.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\libman.json
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewImports.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewStart.cshtml.g.cs
