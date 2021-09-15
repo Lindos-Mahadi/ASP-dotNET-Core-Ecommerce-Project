@@ -61,6 +61,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
             {
                 _context.Add(specialTag);
                 await _context.SaveChangesAsync();
+                TempData["save"] = "Data has been Saved Successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(specialTag);
@@ -112,6 +113,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
                         throw;
                     }
                 }
+                TempData["edit"] = "Data has been updated Successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(specialTag);
@@ -143,12 +145,13 @@ namespace ShoppingStore.Areas.Admin.Controllers
             var specialTag = await _context.specialTags.FindAsync(id);
             _context.specialTags.Remove(specialTag);
             await _context.SaveChangesAsync();
+            TempData["delete"] = "Data has been Deleted Successfully";
             return RedirectToAction(nameof(Index));
         }
 
         private bool SpecialTagExists(int id)
         {
-            return _context.specialTags.Any(e => e.Id == id);
+            return _context.specialTags.Any(e=> e.Id == id);
         }
     }
 }

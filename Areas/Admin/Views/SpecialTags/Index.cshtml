@@ -38,3 +38,23 @@
         </tr>
     }
 </table>
+
+@section scripts{ 
+    <script type="text/javascript">
+        $(function(){
+            var save = '@TempData["save"]'
+            if (save != '') {
+                alertify.success(save);
+            }
+            var edit = '@TempData["edit"]'
+            if (edit != '') {
+                alertify.warning(edit);
+            }
+            var deleteData = '@TempData["delete"]'
+            if (deleteData != '') {
+                alertify.error(deleteData);
+            }
+        })
+        
+    </script>
+}

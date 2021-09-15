@@ -65,7 +65,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
             {
                 _db.Update(productTypes);
                 await _db.SaveChangesAsync();
-                TempData["edit"] = "Data has been Edited Successfully";
+                TempData["edit"] = "Data has been updated Successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(productTypes);
