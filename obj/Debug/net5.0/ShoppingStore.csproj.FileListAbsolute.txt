@@ -447,3 +447,8 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductType
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductTypes\Delete.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductTypes\Details.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Shared\_ButtonPartial.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SpecialTags\Create.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SpecialTags\Delete.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SpecialTags\Details.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SpecialTags\Edit.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SpecialTags\Index.cshtml.g.cs
