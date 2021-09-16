@@ -6,7 +6,7 @@
 
 <br />
 <h2>Update Product Type</h2>
-<form asp-action="Edit" method="post">
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
     <div class="rounded border p-4">
         <input type="hidden" asp-for="Id" />
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
