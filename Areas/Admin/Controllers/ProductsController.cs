@@ -32,12 +32,18 @@ namespace ShoppingStore.Areas.Admin.Controllers
                 .ToList()
             );
         }
-        // Post Index Action Method
+
+
+        // Post Index Action Method For Search Min, Max or Selected Product from Table
+
         [HttpPost]
         public IActionResult Index(decimal? lowPrice, decimal? largePrice)
         {
             var products = _db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag)
                 .Where(c => c.Price >= lowPrice && c.Price <= largePrice).ToList();
+
+            // if input field is null
+
             if (largePrice == null || largePrice == null)
             {
                 //products = _db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag).ToList();
@@ -45,6 +51,8 @@ namespace ShoppingStore.Areas.Admin.Controllers
             }
             return View(products);
         }
+        // End Index Action Method For Search Min, Max or Selected Product from Table
+
         // Create Get Action Method
         public ActionResult Create()
         {
@@ -60,6 +68,8 @@ namespace ShoppingStore.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
+                // Start Same Product exist or not Condition
+
                 var searchProducts = _db.Products.FirstOrDefault(c => c.Name == products.Name);
                 if (searchProducts != null)
                 {
@@ -67,7 +77,10 @@ namespace ShoppingStore.Areas.Admin.Controllers
                     ViewData["TagId"] = new SelectList(_db.specialTags.ToList(), "Id", "SpecialTagName");
                     ViewBag.messahge = "This Name is already exist";
                     return View(products);
+
+                    // End Same Product exist or not Condition
                 }
+
                 if (image != null)
                 {
                     // images location after "/"
@@ -114,6 +127,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Start Same Product exist or not Condition
                 var searchProducts = _db.Products.FirstOrDefault(c => c.Name == products.Name);
                 if (searchProducts != null)
                 {
@@ -122,6 +136,8 @@ namespace ShoppingStore.Areas.Admin.Controllers
                     ViewBag.messahge = "This Name is already exist";
                     return View(products);
                 }
+                // End Same Product exist or not Condition
+
                 if (image != null)
                 {
                     var name = Path.Combine(_he.WebRootPath + "/Images", Path.GetFileName(image.FileName));
