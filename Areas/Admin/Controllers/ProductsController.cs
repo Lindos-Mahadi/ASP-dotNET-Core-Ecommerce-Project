@@ -35,22 +35,23 @@ namespace ShoppingStore.Areas.Admin.Controllers
 
 
         // Post Index Action Method For Search Min, Max or Selected Product from Table
+        
+        //[HttpPost]
+        //public IActionResult Index(decimal? lowPrice, decimal? largePrice)
+        //{
+        //    var products = _db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag)
+        //        .Where(c => c.Price >= lowPrice && c.Price <= largePrice).ToList();
 
-        [HttpPost]
-        public IActionResult Index(decimal? lowPrice, decimal? largePrice)
-        {
-            var products = _db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag)
-                .Where(c => c.Price >= lowPrice && c.Price <= largePrice).ToList();
+        //    // if input field is null
 
-            // if input field is null
+        //    if (largePrice == null || largePrice == null)
+        //    {
+        //        //products = _db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag).ToList();
+        //        return View(_db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag).ToList());
+        //    }
+        //    return View(products);
+        //}
 
-            if (largePrice == null || largePrice == null)
-            {
-                //products = _db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag).ToList();
-                return View(_db.Products.Include(pt => pt.ProductTypes).Include(st => st.SpecialTag).ToList());
-            }
-            return View(products);
-        }
         // End Index Action Method For Search Min, Max or Selected Product from Table
 
         // Create Get Action Method
@@ -95,6 +96,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
 
                 _db.Products.Add(products);
                 await _db.SaveChangesAsync();
+                TempData["save"] = "Data has been Saved Successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(products);
@@ -151,6 +153,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
 
                 _db.Products.Update(products);
                 await _db.SaveChangesAsync();
+                TempData["edit"] = "Data has been updated Successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(products);
@@ -208,6 +211,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
             }
             _db.Products.Remove(product);
             await _db.SaveChangesAsync();
+            TempData["delete"] = "Data has been Deleted Successfully";
             return RedirectToAction(nameof(Index));
         }
     }
