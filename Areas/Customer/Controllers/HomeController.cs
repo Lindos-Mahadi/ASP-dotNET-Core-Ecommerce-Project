@@ -75,5 +75,40 @@ namespace ShoppingStore.Controllers
 
             return View(product);
         }
+        // Remove Add To Cart GET method
+        [ActionName("Remove")]
+        public IActionResult RemoveToCart(int? id)
+        {
+
+            List<Products> addProducts = HttpContext.Session.Get<List<Products>>("products");
+            if (addProducts != null)
+            {
+                var product = addProducts.FirstOrDefault(c => c.Id == id);
+                if (product != null)
+                {
+                    addProducts.Remove(product);
+                    HttpContext.Session.Set("products", addProducts);
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        // Remove POST action method
+        [HttpPost]
+        public IActionResult Remove(int? id)
+        {
+
+            List<Products> addProducts = HttpContext.Session.Get<List<Products>>("products");
+            if (addProducts != null)
+            {
+                var product = addProducts.FirstOrDefault(c => c.Id == id);
+                if (product != null)
+                {
+                    addProducts.Remove(product);
+                    HttpContext.Session.Set("products", addProducts);
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
