@@ -110,5 +110,15 @@ namespace ShoppingStore.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+        // GET product Cart action Method
+        public IActionResult CartView()
+        {
+            List<Products> addProducts = HttpContext.Session.Get<List<Products>>("products");
+            if (addProducts == null)
+            {
+                addProducts = new List<Products>();
+            }
+            return View(addProducts);
+        }
     }
 }

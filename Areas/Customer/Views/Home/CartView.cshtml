@@ -1,0 +1,53 @@
+﻿@using ShoppingStore.Models
+@model List<Products>
+@{
+    ViewData["Title"] = "CartView";
+}
+
+<h1>Cart View</h1>
+<br /><br />
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Product Type</th>
+                <th>Color</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/@item.Image" style="width: 200px; height: 150px" />
+                    </td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.ProductTypes.ProductType</td>
+                    <td>@item.ProductColor</td>
+                    <td>
+                        <a asp-action="Remove" asp-controller="Home" asp-route-id="@item.Id" asp-area="Customer" class="btn btn-warning" ><i class="fa fa-minus" aria-hidden="true"></i></a>
+                        @*<a asp-action="Detail" asp-controller="Home" asp-route-id="@item.Id"><i class="fa fa-plus" aria-hidden="true"></i></a>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <div class="col-6">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-success" >Back to Home</a>
+    </div>
+    <div class="col-6 text-right">
+        <h4>Totla Amount</h4>
+        <h4>Grant Totla : @Model.Sum(c=>c.Price)</h4>
+        <a asp-area="Customer" asp-action="CheckOut" asp-controller="Order" class="btn btn-info" >Process to Checkout</a>
+    </div>
+</div>
+<br />
+<br />
