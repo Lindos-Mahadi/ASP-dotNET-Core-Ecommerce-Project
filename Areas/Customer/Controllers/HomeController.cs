@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using ShoppingStore.Data;
 using ShoppingStore.Models;
+using ShoppingStore.Utility;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -47,6 +49,31 @@ namespace ShoppingStore.Controllers
             }
             return View(product);
         }
-        
+
+        // Get Details Method
+        [HttpPost]
+        [ActionName("Details")]
+        public ActionResult ProductDetails(int? id)
+        {
+            List<Products> addProducts = new List<Products>();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var product = _db.Products.Include(c => c.ProductTypes).FirstOrDefault(c => c.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            addProducts = HttpContext.Session.Get<List<Products>>("products");
+            if (addProducts == null)
+            {
+                addProducts = new List<Products>();
+            }
+            addProducts.Add(product);
+            HttpContext.Session.Set("products", addProducts);
+
+            return View(product);
+        }
     }
 }
