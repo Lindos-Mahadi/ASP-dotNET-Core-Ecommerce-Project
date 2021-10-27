@@ -500,4 +500,6 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Create.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Index.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Views\Shared\_PartialView.cshtml.g.cs
