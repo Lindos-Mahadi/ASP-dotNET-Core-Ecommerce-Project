@@ -43,7 +43,9 @@ namespace ShoppingStore
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,6 +79,8 @@ namespace ShoppingStore
                     name: "areas",
                     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}"
                 );
+                //THIS IS MUST FOR IDENTITY RAZOR PAGES
+                endpoints.MapRazorPages();
             });
         }
     }
