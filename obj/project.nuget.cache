@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9lYd+r1ZvF9HrHufQopLm+0yhLho9A5uxAtyOs0D8A71oNVV6/TwN/MiFj7lijaXqiQGwwCxbVfVzKzV+2v2Gw==",
+  "dgSpecHash": "sAzzS3fHYme5XtyxCeewI/HL0WXa8Iake956br1ch33NBuH8Oxb4rUMkdAltEjhw0HFD6glBYfn57wbgjGmDZw==",
   "success": true,
   "projectFilePath": "F:\\DotNetCore\\ShoppingStore\\ShoppingStore.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\LINDOS\\.nuget\\packages\\jetbrains.annotations\\2021.1.0\\jetbrains.annotations.2021.1.0.nupkg.sha512",
     "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.11\\microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512",
     "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.11\\microsoft.aspnetcore.cryptography.keyderivation.5.0.11.nupkg.sha512",
-    "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.9\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.9.nupkg.sha512",
+    "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.11\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.11\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\LINDOS\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.11\\microsoft.aspnetcore.identity.ui.5.0.11.nupkg.sha512",
