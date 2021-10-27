@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using X.PagedList;
 
 namespace ShoppingStore.Controllers
 {
@@ -24,11 +25,16 @@ namespace ShoppingStore.Controllers
             _db = db;
         }
 
-        public IActionResult Index()
-        {
-            return View(_db.Products.Include(c => c.ProductTypes).Include(c => c.SpecialTag).ToList());
-        }
+        //public IActionResult Index()
+        //{
+        //    return View(_db.Products.Include(c => c.ProductTypes).Include(c => c.SpecialTag).ToList());
+        //}
 
+        //PAGINATION
+        public IActionResult Index(int? page)
+        {
+            return View(_db.Products.Include(c => c.ProductTypes).Include(c => c.SpecialTag).ToList().ToPagedList(pageNumber: page ?? 1, pageSize: 8));
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

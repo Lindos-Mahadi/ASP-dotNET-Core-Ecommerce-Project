@@ -458,3 +458,6 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\In
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\CartView.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\CheckOut.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\JetBrains.Annotations.dll
+F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\X.PagedList.dll
+F:\DotNetCore\ShoppingStore\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
