@@ -504,4 +504,4 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ref\ShoppingStore.dll
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.pdb
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.genruntimeconfig.cache
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Edit.cshtml.g.cs
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Details.cshtml.g.cs

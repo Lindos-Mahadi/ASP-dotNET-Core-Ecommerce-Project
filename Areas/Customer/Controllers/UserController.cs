@@ -79,5 +79,16 @@ namespace ShoppingStore.Areas.Customer.Controllers
             }
             return View(userInfo);
         }
+
+        // Details User
+        public async Task<IActionResult> Details(string id)
+        {
+            var user = _db.ApplicationUsers.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
     }
 }
