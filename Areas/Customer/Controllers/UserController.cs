@@ -20,11 +20,6 @@ namespace ShoppingStore.Areas.Customer.Controllers
             _db = db;
         }
 
-        public IActionResult Index()
-        {
-            return View(_db.ApplicationUsers.ToList());
-        }
-
         public async Task<IActionResult> Create()
         { 
             return View();
@@ -48,6 +43,12 @@ namespace ShoppingStore.Areas.Customer.Controllers
                 }
             }
             return View();
+        }
+
+        // View User List
+        public IActionResult Index()
+        {
+            return View(_db.ApplicationUsers.ToList());
         }
     }
 }

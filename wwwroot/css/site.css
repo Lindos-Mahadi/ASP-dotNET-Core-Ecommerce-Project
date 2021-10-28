@@ -24,8 +24,12 @@ a {
   border-color: #1861ac;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* ------------Sticky footer styles--------------------- */
+/* ------------Error Message--------------------- */
+.error{
+    color: red;
+}
+/* ------------Sticky footer styles--------------------- */
 html {
   font-size: 14px;
 }

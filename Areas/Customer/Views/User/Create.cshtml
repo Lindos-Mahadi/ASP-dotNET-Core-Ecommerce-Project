@@ -6,15 +6,15 @@
 <h2>Add New User</h2>
 
 <div class="">
-    <form asp-action="Create" method="post" id="basic-form">
-       
+    <form asp-action="Create" method="post" id="user-form">
+        
         <div class="form-group row">
             <div class="col-2"></div>
             <div class="col-6">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             </div>
         </div>
-        
+
         <div class="p-4 rounded border">
 
             <div class="form-group row">
@@ -66,24 +66,38 @@
 </div>
 @section Scripts{
     @{
+        //await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        // JUERY FORM VALIDATION
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
     <script>
         $(document).ready(function () {
-            $("#basic-form").validate({
+            $("#user-form").validate({
                 rules: {
                     UserName: {
-                        required: true
+                        required: true,
                     },
                     FirstName: {
-                        required: true
-                    },
-                    message: {
-                        UserName: "Please Fill The Name Box"
-                    }
-                }
-            });
+                        required: true,
 
+                    },
+                    LastName: {
+                        required: true,
+
+                    },
+                    PasswordHash: {
+                        required: true,
+
+                    }
+                },
+                messages: {
+                    UserName: "Enter your email",
+                    FirstName: "Enter your First Name",
+                    LastName: "Enter your Last Name",
+                    PasswordHash: "Enter your password"
+                }
+
+            });
         });
     </script>
 }
