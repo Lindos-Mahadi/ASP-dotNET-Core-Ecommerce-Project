@@ -19,7 +19,12 @@ namespace ShoppingStore.Areas.Customer.Controllers
             _userManager = userManager;
             _db = db;
         }
-
+        // View User List
+        public IActionResult Index()
+        {
+            return View(_db.ApplicationUsers.ToList());
+        }
+        // Create User
         public async Task<IActionResult> Create()
         { 
             return View();
@@ -45,10 +50,34 @@ namespace ShoppingStore.Areas.Customer.Controllers
             return View();
         }
 
-        // View User List
-        public IActionResult Index()
+        // Edit User
+        public async Task<IActionResult> Edit(string id)
         {
-            return View(_db.ApplicationUsers.ToList());
+            var user = _db.ApplicationUsers.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(ApplicationUser user)
+        {
+            var userInfo = _db.ApplicationUsers.FirstOrDefault(u => u.Id == user.Id);
+            if (userInfo == null)
+            {
+                return NotFound();
+            }
+            userInfo.FirstName = user.FirstName;
+            userInfo.LastName = user.LastName;
+            var result = await _userManager.UpdateAsync(userInfo);
+            if (result.Succeeded)
+            {
+                TempData["save"] = "User has been Updated Successfully";
+                //ViewBag.save = "Register has been completed Successfully";
+                return RedirectToAction("Index");
+            }
+            return View(userInfo);
         }
     }
 }
