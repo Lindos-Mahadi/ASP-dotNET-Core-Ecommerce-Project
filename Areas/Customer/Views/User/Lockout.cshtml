@@ -1,0 +1,82 @@
+﻿@model ShoppingStore.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Lockout";
+}
+
+<h2>Lockout User</h2>
+
+<div class="">
+    <form asp-action="Lockout" method="post" id="basic-form">
+
+        <div class="form-group row">
+            <div class="col-2"></div>
+            <div class="col-6">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            </div>
+        </div>
+
+        <div class="p-4 rounded border">
+            <h1>@ViewBag.save</h1>
+            <h3>Do you Want to Lockout this User ?</h3>
+            <br />
+            <div class="form-group row">
+                <input asp-for="Id" type="hidden" value="@Model.Id" />
+                <div class="col-2">
+                    <label asp-for="UserName"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="UserName" class="form-control" readonly="readonly" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="FirstName"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="FirstName" class="form-control" readonly="readonly" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="LastName"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="LastName" class="form-control" readonly="readonly" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <input type="submit" class="btn btn-primary" value="Lockout" />
+                    @*<a asp-action="Create" class="btn btn-success">Create</a>*@
+                    <a asp-action="Index" class="btn btn-success">Back to List</a>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+@section scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#basic-form").validate({
+                rules: {
+                    UserName: {
+                        Required: true,
+                    },
+                    PasswordHash: {
+                        requried: true,
+                    }
+                }
+            });
+        });
+    </script>
+}
+

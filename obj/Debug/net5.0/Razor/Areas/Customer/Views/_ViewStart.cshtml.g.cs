@@ -26,8 +26,29 @@ using ShoppingStore.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
+using ShoppingStore.Areas.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
+using ShoppingStore.Areas.Identity.Pages;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a4bc9cb4a1d11f0c28a746ed054b4cb82c25e233", @"/Areas/Customer/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4374419cf835837bc4d9ffae275f900231652f5c", @"/Areas/Customer/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b35295b6ed611cb0c0aa86215a1346cbf47b654a", @"/Areas/Customer/Views/_ViewImports.cshtml")]
     public class Areas_Customer_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -10,7 +10,10 @@
         <a asp-action="Details" class="btn btn-success" asp-route-id="@Model">
             <i class="fal fa-clipboard-list-check"></i>
         </a>
-        <a asp-action="Lockout" class="btn btn-danger" asp-route-id="@Model">
+        <a asp-action="Lockout" class="btn btn-warning" asp-route-id="@Model">
+            <i class="fas fa-user-lock"></i>
+        </a>
+        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@Model">
             <i class="fas fa-trash-alt"></i>
         </a>
     </div>
