@@ -35,6 +35,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
         public async Task <IActionResult> Create(string name)
         {
 
+            // SAME ROLE NAME VALIDATION CHECK
             IdentityRole role = new IdentityRole();
             role.Name = name;
             var isExist = await _roleManager.RoleExistsAsync(role.Name);
@@ -45,6 +46,8 @@ namespace ShoppingStore.Areas.Admin.Controllers
                 ViewBag.name = name;
                 return View();
             }
+            // END OF SAME ROLE NAME VALIDATION CHECK
+
             var result = await _roleManager.CreateAsync(role);
 
             if (result.Succeeded)
