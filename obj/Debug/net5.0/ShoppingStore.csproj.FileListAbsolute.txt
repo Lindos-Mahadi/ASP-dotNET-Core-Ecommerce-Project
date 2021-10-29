@@ -510,5 +510,6 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Act
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Delete.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Index.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Create.cshtml.g.cs
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Edit.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Delete.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache

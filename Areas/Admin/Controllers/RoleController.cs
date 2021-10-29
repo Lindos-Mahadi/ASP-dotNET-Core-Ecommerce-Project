@@ -97,5 +97,37 @@ namespace ShoppingStore.Areas.Admin.Controllers
             return View();
         }
 
+        // Get action Delete Method
+        public async Task<IActionResult> Delete(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+            ViewBag.id = role.Id;
+            ViewBag.name = role.Name;
+            return View();
+        }
+
+        // Edit action Delete Method
+        [HttpPost]
+        [ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirm(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+            var result = await _roleManager.DeleteAsync(role);
+            if (result.Succeeded)
+            {
+                TempData["delete"] = "Role has been Deleted Successfully";
+                return RedirectToAction("Index");
+            }
+            return View(role);
+        }
+
     }
 }
