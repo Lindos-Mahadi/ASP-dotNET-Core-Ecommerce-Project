@@ -508,4 +508,4 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Det
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Lockout.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Active.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\Delete.cshtml.g.cs
-F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Index.cshtml.g.cs
