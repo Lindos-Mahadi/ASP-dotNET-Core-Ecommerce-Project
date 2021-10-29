@@ -57,7 +57,45 @@ namespace ShoppingStore.Areas.Admin.Controllers
             }
             return View();
         }
+        // Get action Edit Method
+        public async Task<IActionResult> Edit(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+            ViewBag.id = role.Id;
+            ViewBag.name = role.Name;
+            return View();
+        }
 
-        
+        // Edit action Create Method
+        [HttpPost]
+        public async Task<IActionResult> Edit(string id, string name)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+            role.Name = name;
+            var isExist = await _roleManager.RoleExistsAsync(role.Name);
+            if (isExist)
+            {
+                ViewBag.msg = "This Role is already exist";
+                ViewBag.name = name;
+                return View();
+            }
+            var result = await _roleManager.UpdateAsync(role);
+
+            if (result.Succeeded)
+            {
+                TempData["save"] = "Role has been Updated Successfully";
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
     }
 }
