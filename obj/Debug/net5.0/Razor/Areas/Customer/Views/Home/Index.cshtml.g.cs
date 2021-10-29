@@ -20,27 +20,6 @@ using ShoppingStore;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
-using Microsoft.AspNetCore.Identity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 6 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
-using ShoppingStore.Areas.Identity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 7 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
-using ShoppingStore.Areas.Identity.Pages;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 1 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\Home\Index.cshtml"
 using ShoppingStore.Models;
 
@@ -55,7 +34,7 @@ using X.PagedList.Mvc.Core;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"254c43ed60bbceb222607384c6f2a6af48db46fb", @"/Areas/Customer/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b35295b6ed611cb0c0aa86215a1346cbf47b654a", @"/Areas/Customer/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"050049e3f7b7e964cdb3c32cd2210b50b7092d04", @"/Areas/Customer/Views/_ViewImports.cshtml")]
     public class Areas_Customer_Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<X.PagedList.IPagedList<Products>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("img-fluid card-img-top"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -116,7 +95,7 @@ using X.PagedList.Mvc.Core;
 #line hidden
 #nullable disable
             WriteLiteral("</label>\r\n                    </h4>\r\n                </div>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "254c43ed60bbceb222607384c6f2a6af48db46fb7197", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "254c43ed60bbceb222607384c6f2a6af48db46fb6632", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -150,7 +129,7 @@ AddHtmlAttributeValue("", 585, product.Image, 585, 14, false);
 #line hidden
 #nullable disable
             WriteLiteral("</strong></label>\r\n\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "254c43ed60bbceb222607384c6f2a6af48db46fb9448", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "254c43ed60bbceb222607384c6f2a6af48db46fb8883", async() => {
                 WriteLiteral("View Details");
             }
             );

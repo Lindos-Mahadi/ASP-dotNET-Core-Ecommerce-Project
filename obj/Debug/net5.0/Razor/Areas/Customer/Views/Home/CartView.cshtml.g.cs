@@ -20,27 +20,6 @@ using ShoppingStore;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
-using Microsoft.AspNetCore.Identity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 6 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
-using ShoppingStore.Areas.Identity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 7 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\_ViewImports.cshtml"
-using ShoppingStore.Areas.Identity.Pages;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 1 "F:\DotNetCore\ShoppingStore\Areas\Customer\Views\Home\CartView.cshtml"
 using ShoppingStore.Models;
 
@@ -48,7 +27,7 @@ using ShoppingStore.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4e323ad529b12c1181242c0d6ae4dc14ff6b31ef", @"/Areas/Customer/Views/Home/CartView.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b35295b6ed611cb0c0aa86215a1346cbf47b654a", @"/Areas/Customer/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"050049e3f7b7e964cdb3c32cd2210b50b7092d04", @"/Areas/Customer/Views/_ViewImports.cshtml")]
     public class Areas_Customer_Views_Home_CartView : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Products>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("width: 200px; height: 150px"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -121,7 +100,7 @@ using ShoppingStore.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                <tr>\r\n                    <td>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef7994", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef7429", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -177,7 +156,7 @@ AddHtmlAttributeValue("", 628, item.Image, 628, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                    <td>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef10657", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef10092", async() => {
                 WriteLiteral("<i class=\"fa fa-minus\" aria-hidden=\"true\"></i>");
             }
             );
@@ -222,7 +201,7 @@ AddHtmlAttributeValue("", 628, item.Image, 628, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("        </tbody>\r\n    </table>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-6\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef13750", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef13185", async() => {
                 WriteLiteral("Back to Home");
             }
             );
@@ -249,7 +228,7 @@ AddHtmlAttributeValue("", 628, item.Image, 628, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("</h4>\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef15565", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e323ad529b12c1181242c0d6ae4dc14ff6b31ef15000", async() => {
                 WriteLiteral("Process to Checkout");
             }
             );
