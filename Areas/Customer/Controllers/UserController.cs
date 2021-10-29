@@ -122,5 +122,36 @@ namespace ShoppingStore.Areas.Customer.Controllers
             }
             return View(userInfo);
         }
+
+        // LOCKOUT USER ACTIVE METHOD
+        public async Task<IActionResult> Active(string id)
+        {
+            var user = _db.ApplicationUsers.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        // POST
+        [HttpPost]
+        public async Task<IActionResult> Active(ApplicationUser user)
+        {
+            var userInfo = _db.ApplicationUsers.FirstOrDefault(u => u.Id == user.Id);
+            if (userInfo == null)
+            {
+                return NotFound();
+            }
+            //userInfo.LockoutEnd = null;
+            userInfo.LockoutEnd = DateTime.Now.AddDays(-1);
+            int rowAffected = _db.SaveChanges();
+            if (rowAffected > 0)
+            {
+                TempData["save"] = "This User has been Activeted Successfully";
+                return RedirectToAction("Index");
+            }
+            return View(userInfo);
+        }
     }
 }
