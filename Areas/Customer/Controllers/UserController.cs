@@ -153,5 +153,37 @@ namespace ShoppingStore.Areas.Customer.Controllers
             }
             return View(userInfo);
         }
+
+        // Delete GET Method
+        public async Task<IActionResult> Delete(string id)
+        {
+            var user = _db.ApplicationUsers.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        // // Delete POST Method 
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(ApplicationUser user)
+        {
+            var userInfo = _db.ApplicationUsers.FirstOrDefault(u => u.Id == user.Id);
+            if (userInfo == null)
+            {
+                return NotFound();
+            }
+            _db.ApplicationUsers.Remove(userInfo);
+            int rowAffected = _db.SaveChanges();
+            if (rowAffected > 0)
+            {
+                TempData["save"] = "This User has been Deleted Successfully";
+                return RedirectToAction("Index");
+            }
+            return View(userInfo);
+        }
+
     }
 }
