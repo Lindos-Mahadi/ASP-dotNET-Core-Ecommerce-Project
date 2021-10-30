@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 namespace ShoppingStore.Areas.Customer.Controllers
 {
     [Area("Customer")]
-    [Authorize]
     public class UserController : Controller
     {
         UserManager<IdentityUser> _userManager;
