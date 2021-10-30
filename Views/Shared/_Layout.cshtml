@@ -4,7 +4,9 @@
 @inject IHttpContextAccessor HttpContextAccessor
 
 @{
+    // USER ROLE FOR DEFAULT
     var userRole = HttpContextAccessor.HttpContext.Session.GetString("roleName");
+    //
     int count = 0;
     List<Products> products = HttpContextAccessor.HttpContext.Session.Get<List<Products>>("products");
 
