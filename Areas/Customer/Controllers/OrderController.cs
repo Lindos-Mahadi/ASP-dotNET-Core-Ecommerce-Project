@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingStore.Data;
 using ShoppingStore.Models;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 namespace ShoppingStore.Areas.Customer.Controllers
 {
     [Area("Customer")]
+    [Authorize]
     public class OrderController : Controller
     {
         private ApplicationDbContext _db = null;

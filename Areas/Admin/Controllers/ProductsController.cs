@@ -15,6 +15,7 @@ using ShoppingStore.Models;
 namespace ShoppingStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class ProductsController : Controller
     {
         private ApplicationDbContext _db = null;
@@ -26,6 +27,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
             _he = he;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View(_db.Products

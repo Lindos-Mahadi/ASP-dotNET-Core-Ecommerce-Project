@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using ShoppingStore.Models;
 namespace ShoppingStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class SpecialTagsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,6 +23,7 @@ namespace ShoppingStore.Areas.Admin.Controllers
         }
 
         // GET: Admin/SpecialTags
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.specialTags.ToListAsync());

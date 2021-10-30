@@ -5,10 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using ShoppingStore.Data;
 using ShoppingStore.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShoppingStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class ProductTypesController : Controller
     {
         private ApplicationDbContext _db = null;
