@@ -46,8 +46,15 @@ namespace ShoppingStore
 
             // ATTEMPT TO INVALID IF TRUE, THEN EDIT FALSE
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            //options.SignIn.RequireConfirmedAccount = false)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //  AUTHORIZE REDIRECT LOGIN PAGE PROBLEM SOLVE
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddEntityFrameworkStores<ApplicationDbContext>()
+                    .AddDefaultTokenProviders()
+                    .AddDefaultUI();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
