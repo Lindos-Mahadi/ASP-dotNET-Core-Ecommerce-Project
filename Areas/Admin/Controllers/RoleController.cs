@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using ShoppingStore.Areas.Admin.Models;
 using ShoppingStore.Areas.Admin.RoleModels;
 using ShoppingStore.Data;
 using System;
@@ -163,6 +164,23 @@ namespace ShoppingStore.Areas.Admin.Controllers
                 TempData["save"] = "User Role has been Assigned Successfully";
                 return RedirectToAction("Index");
             }
+            return View();
+        }
+        public ActionResult AssignUserRole()
+        {
+            var result = from ur in _db.UserRoles
+                         join r in _db.Roles on ur.RoleId equals r.Id
+                         join a in _db.ApplicationUsers on ur.UserId equals a.Id
+                         select new UserRoleMaping()
+                         {
+                             UserId = ur.UserId,
+                             RoleId = ur.RoleId,
+                             UserName = a.UserName,
+                             RoleName = r.Name
+                         };
+            ViewBag.UserRoles = result;
+
+
             return View();
         }
     }
