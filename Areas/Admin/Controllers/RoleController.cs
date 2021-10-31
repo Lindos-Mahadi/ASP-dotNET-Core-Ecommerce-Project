@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 namespace ShoppingStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
     public class RoleController : Controller
     {
         RoleManager<IdentityRole> _roleManager;

@@ -514,3 +514,4 @@ F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Edit.c
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Delete.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Assign.cshtml.g.cs
 F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\AssignUserRole.cshtml.g.cs
+F:\DotNetCore\ShoppingStore\obj\Debug\net5.0\ShoppingStore.csproj.AssemblyReference.cache
